@@ -7,21 +7,8 @@ Before you start, ensure you have the following installed:
 
 ###  Download and Install Git
 
-#### Windows
-
 1. Download the Git installer from the [official Git website](https://git-scm.com/downloads).
 2. Run the installer and follow the setup instructions. Use the default settings unless you have specific requirements.
-
-#### macOS
-
-1. Install Git using Homebrew. If you don't have Homebrew installed, first install it by running:
-
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-2. Install Git:
-    ```bash
-    brew install git
 
 ### Visual Studio, C++ with vcpkg
 
