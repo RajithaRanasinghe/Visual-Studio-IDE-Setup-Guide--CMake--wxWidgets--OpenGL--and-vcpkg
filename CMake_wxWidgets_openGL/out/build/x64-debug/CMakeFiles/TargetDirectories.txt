@@ -1,0 +1,3 @@
+D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/CMakeFiles/CMake_wxWidgets_openGL.dir
+D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/CMakeFiles/edit_cache.dir
+D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/CMakeFiles/rebuild_cache.dir

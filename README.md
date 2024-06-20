@@ -51,7 +51,24 @@ CMake is an open-source, cross-platform family of tools designed to build, test,
 Download the CMake installer from the [official CMake website](https://cmake.org/download/).
 
 
-## Visual Studio IDE setup
+## Set Up Visual Studio Project
+
+### Create a New Project
+
+1. **Create a New CMake Project**:
+   - Go to `File` > `New` > `Project`.
+   - Select `Create a new project`.
+   - Select `CMake Project` and click `Next`.
+   - Name your project ("CMake_wxWidgets_openGL") and click `Create`.
+
+This will create a project with following project files.
+
+    - CMakeLists.txt
+    - CMakePresets.json
+    - CMake_wxWidgets_openGL.cpp
+    - CMake_wxWidgets_openGL.h
+
+
 
 
 
