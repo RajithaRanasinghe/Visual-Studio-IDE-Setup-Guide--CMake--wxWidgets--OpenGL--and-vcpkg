@@ -27,7 +27,7 @@ Before you start, ensure you have the following installed:
     - vcpkg package manager (Visual Studio 2022 comes with built-in support for vcpkg, simplifying the process of installing and managing C++ libraries.)
 ![Visual Studio Installer](images/visual_studio_installer.jpg)
 
-> **Note:** Alternatively vcpkg can be cloned directly from the GitHub vcpkg repository using following steps.
+**Note:** Alternatively vcpkg can be cloned directly from the GitHub vcpkg repository using following steps.
 
 #### 1. Clone the repository
 ```bash
