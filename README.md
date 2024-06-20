@@ -5,10 +5,17 @@
 
 Before you start, ensure you have the following installed:
 
-- Visual Studio 2022 (or later) with the "Desktop development with C++" workload [Visual Studio official website](https://visualstudio.microsoft.com/downloads/).
+
+### Visual Studio, C++ and vcpkg
+
+- Visual Studio 2022 (or later) with the "Desktop development with C++" workload [official website](https://visualstudio.microsoft.com/downloads/).
+    In the installation details make sure following are selected,
+    - C++ CMake tools for Windows
+    - vcpkg package manager
+![Visual Studio Installer](images/visual_studio_installer.jpg)
 
 
-# Setting Up Git
+###  Git
 
 This guide provides step-by-step instructions on how to set up Git on your local machine.
 
