@@ -72,12 +72,12 @@ This will create a project with the following files:
 **Note:** The `VCPKG_ROOT` environment variable will only be visible in the Visual Studio Environment Command prompt.
 ![Visual Studio Command Prompt](images/vcpkg_path.jpg)
 
-**Note:** If you have vcpkg cloned from github use following command to set the environment variable. if Visual Studio vcpkg is already installed it will have `VCPKG_ROOT` environment variable name by default, Therefor we need to use a different environment variable name.
-
+ -  If you cloned vcpkg from GitHub, set the environment variable using:
     ```bash
     set USER_VCPKG_ROOT="C:\path\to\vcpkg"
     set PATH=%VCPKG_ROOT%;%PATH%
     ```
+**Note:** if Visual Studio vcpkg is already installed it will have `VCPKG_ROOT` environment variable name by default, Therefor a different environment variable name must be used.
 
 2. Generate a manifest file and add dependencies:
 
