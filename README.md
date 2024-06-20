@@ -68,6 +68,7 @@ This will create a project with following project files.
     - CMake_wxWidgets_openGL.cpp
     - CMake_wxWidgets_openGL.h
 
+![Visual Studio IDE with fresh CMake project](images/vs_ide_1.jpg)
 
 
 
