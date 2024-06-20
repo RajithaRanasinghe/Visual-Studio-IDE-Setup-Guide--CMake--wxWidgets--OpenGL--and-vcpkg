@@ -73,6 +73,7 @@ This will create a project with the following files:
 ![Visual Studio Command Prompt](images/vcpkg_path.jpg)
 
 **Note:** If you have vcpkg cloned from github use following command to set the environment variable. if Visual Studio vcpkg is already installed it will have `VCPKG_ROOT` environment variable name by default, Therefor we need to use a different environment variable name.
+
     ```bash
     set USER_VCPKG_ROOT="C:\path\to\vcpkg"
     set PATH=%VCPKG_ROOT%;%PATH%
