@@ -283,8 +283,9 @@ This will create a project with following project files.
 
 ## Run the example C++ code.
 
-    - Replace the contents of the `CMake_wxWidgets_openGL.cpp` file with the following code:
-    ```bash
+- Replace the contents of the `CMake_wxWidgets_openGL.cpp` file with the following code:
+
+```bash
 
     #include <wx/wx.h>
     #include <wx/glcanvas.h>
@@ -500,7 +501,7 @@ This will create a project with following project files.
         Refresh(); // Trigger a paint event to redraw the scene.
     }
 
-    ```
+```
 
 ## Build and Run.
 
