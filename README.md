@@ -19,18 +19,21 @@ Before you start, ensure you have the following installed:
    ```bash
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+2. Install Git:
+    ```bash
+    brew install git
+
 ### Visual Studio, C++ with vcpkg
 
-- Visual Studio 2022 (or later) with the "Desktop development with C++" workload [official website](https://visualstudio.microsoft.com/downloads/).
-    In the installation details make sure following are selected,
+1. Download and install Visual Studio 2022 (or later) with the "Desktop development with C++" workload from the [official website](https://visualstudio.microsoft.com/downloads/).
+
+2. During installation, make sure the following components are selected:
     - C++ CMake tools for Windows
     - vcpkg package manager (Visual Studio 2022 comes with built-in support for vcpkg, simplifying the process of installing and managing C++ libraries.)
 
-vcpkg is an open-source C++ library manager that helps you manage library dependencies across different platforms. It simplifies the process of finding, installing, and integrating libraries into your C++ projects. Developed by Microsoft, vcpkg is designed to work seamlessly with CMake.
-
 ![Visual Studio Installer](images/visual_studio_installer.jpg)
 
-**Note:** Alternatively vcpkg can be cloned directly from the GitHub vcpkg repository using following steps.
+**Note:** Alternatively, vcpkg can be cloned directly from the GitHub vcpkg repository using the following steps:
 
 1. Clone the repository
 
@@ -46,9 +49,8 @@ vcpkg is an open-source C++ library manager that helps you manage library depend
 
 ###  Download and Install CMake
 
-CMake is an open-source, cross-platform family of tools designed to build, test, and package software. It controls the software compilation process using simple platform and compiler-independent configuration files, and generates native makefiles and workspaces that can be used in the compiler environment of your choice.
-
-Download the CMake installer from the [official CMake website](https://cmake.org/download/).
+1. Download the CMake installer from the [official CMake website](https://cmake.org/download/).
+2. Run the installer and follow the setup instructions.
 
 
 ## Set Up Visual Studio Project
@@ -60,7 +62,7 @@ Download the CMake installer from the [official CMake website](https://cmake.org
    - Select `CMake Project` and click `Next`.
    - Name your project ("CMake_wxWidgets_openGL") and click `Create`.
 
-This will create a project with following project files.
+This will create a project with the following files:
 
     - CMakeLists.txt
     - CMakePresets.json
@@ -78,28 +80,28 @@ This will create a project with following project files.
     ```bash
     echo %VCPKG_ROOT%
     ```
-    - You should get "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg" path as response if vcpkg is installed successfully.
+    - You should see the path `"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg"` if vcpkg is installed successfully.
 
 **Note:** The `VCPKG_ROOT` environment variable will only be visible in the Visual Studio Environment Command prompt.
 ![Visual Studio Command Prompt](images/vcpkg_path.jpg)
 
-**Note:** If you have vcpkg cloned from github use following command to set the environment variable. if Visual Studio vcpkg is already installed it will have `VCPKG_ROOT` environment variable name by default Therefor we need to use a different environment variable name.
+**Note:** If you have vcpkg cloned from github use following command to set the environment variable. if Visual Studio vcpkg is already installed it will have `VCPKG_ROOT` environment variable name by default, Therefor we need to use a different environment variable name.
     ```bash
     set USER_VCPKG_ROOT="C:\path\to\vcpkg"
     set PATH=%VCPKG_ROOT%;%PATH%
     ```
 
-2. Generate a manifest file and add dependencies
+2. Generate a manifest file and add dependencies:
 
-    - In Command Prompt, type the following command to create a vcpkg manifest file (`vcpkg.json`) This will add `vcpkg.json` file and a `vcpkg-configuration.json` file in the project's directory:
+    - In Command Prompt, type the following to create a vcpkg manifest file (`vcpkg.json`): This will add `vcpkg.json` file and a `vcpkg-configuration.json` file in the project's directory:
     ```bash
     vcpkg new --application
     ```
-    - Add the `wxwidgets` `opengl` packages as a dependencies by typing following in the Command Prompt:
+    - Add the `wxwidgets` and `opengl` packages as dependencies:
     ```bash
     vcpkg add port wxwidgets opengl
     ```
-    Now the manifest file `vcpkg.json` should look like this:
+    - Your `vcpkg.json` should look like this:
     ```bash
     {
     "dependencies": [
@@ -112,21 +114,21 @@ This will create a project with following project files.
 
 ## Configure CMake files.
 
-1. Configure the `CMakePresets.json` file for letting vcpkg to provide packages to CMake when configuring and building the project:
+1. Edit `CMakePresets.json` to let vcpkg provide packages to CMake:
 
-    - Edit `CMakePresets.json` as follows,
-    in the json, under the "cacheVariables", add following line, If you are using the vcpkg that comes with Visual Studio.
+    - If using the built-in vcpkg, add this line under `"cacheVariables"`:
     ```bash
     "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
     ```
-    or usimng custom vcpkg Replace `<VCPKG_Path>` with the path to your vcpkg directory
+
+    - If using a custom vcpkg, replace <VCPKG_Path> with your vcpkg directory path:
     ```bash
     "CMAKE_TOOLCHAIN_FILE": "<VCPKG_Path>/scripts/buildsystems/vcpkg.cmake"
     ```
 
-    **Note:** A Visual Studio notice will appear to regenerate CMake cache. You need to click this.
+    **Note:** A notice will appear to regenerate the CMake cache. Click to confirm.
 
-    - The edited `CMakePresets.json` file should look lke this:
+    - Your `CMakePresets.json` should look like this:
     ```bash
     {
     "version": 3,
@@ -234,9 +236,8 @@ This will create a project with following project files.
     }
     ```
 
-2. Configure the ` CMakeLists.txt` fto link the libraries to the C++ project files:
+2. Edit `CMakeLists.txt` to link the libraries to the C++ project files:
 
-    - Revise the contents of the `CMakeLists.txt` file as follows:
     ```bash
 
     # CMakeList.txt : CMake project for CMake_wxWidgets_openGL
@@ -278,10 +279,10 @@ This will create a project with following project files.
 
     ```
 
-**Note:** After saving the newly edited ` CMakeLists.txt` file. Visual Studio will automatically start applying CMake changes. When everything is done  you would see `CMake generation finished.` message at the end of the Output window.
+**Note:** After saving the edited `CMakeLists.txt`, Visual Studio will automatically start applying the CMake changes. When completed, you should see the **"CMake generation finished."** message in the Output window.
 
 
-## Run the example C++ code.
+## Run the Example C++ Ccode.
 
 - Replace the contents of the `CMake_wxWidgets_openGL.cpp` file with the following code:
 
@@ -418,7 +419,7 @@ This will create a project with following project files.
         CreateStatusBar();
         SetStatusText("Welcome to wxWidgets!");
 
-        // Create the OpenGL canvas but don't show it initially.
+        // Create the OpenGL canvas but dont show it initially.
         m_glCanvas = new MyGLCanvas(this);
         m_glCanvas->Hide();
     }
@@ -506,32 +507,12 @@ This will create a project with following project files.
 ## Build and Run.
 
 1. Build
-    - Select th type of build ex `x64-debug` or "x64-release".
+    - Select the build type (e.g., `x64-Debug` or `x64-Release`).
     - Go to `Build` > `Rebuild All`.
 
 2. Run
     - Go to `DeBug` > `Start Without Debugging`.
-    This will run the program ans show it's main application window.
-    In the window,
-    - Go to `View` > `OpenGL`. to show Graphics Window withing main application window.
+    - This will run the program and show the main application window.
+    In the window, go to `View` > `OpenGL` to show the Graphics Window within the main application window.
 
 ![Output](images/vs_ide_with_build.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
