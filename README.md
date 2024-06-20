@@ -5,30 +5,7 @@
 
 Before you start, ensure you have the following installed:
 
-
-### Visual Studio, C++ and vcpkg
-
-- Visual Studio 2022 (or later) with the "Desktop development with C++" workload [official website](https://visualstudio.microsoft.com/downloads/).
-    In the installation details make sure following are selected,
-    - C++ CMake tools for Windows
-    - vcpkg package manager
-![Visual Studio Installer](images/visual_studio_installer.jpg)
-
-
-###  Git
-
-This guide provides step-by-step instructions on how to set up Git on your local machine.
-
-## Prerequisites
-
-Before you start, ensure you have the following:
-
-- A GitHub account
-- Administrator access on your local machine
-
-## Step-by-Step Guide
-
-### 1. Download and Install Git
+###  Download and Install Git
 
 #### Windows
 
@@ -41,3 +18,28 @@ Before you start, ensure you have the following:
 
    ```bash
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+### Visual Studio, C++ with vcpkg
+
+- Visual Studio 2022 (or later) with the "Desktop development with C++" workload [official website](https://visualstudio.microsoft.com/downloads/).
+    In the installation details make sure following are selected,
+    - C++ CMake tools for Windows
+    - vcpkg package manager (Visual Studio 2022 comes with built-in support for vcpkg, simplifying the process of installing and managing C++ libraries.)
+![Visual Studio Installer](images/visual_studio_installer.jpg)
+
+> **Note:** Alternatively vcpkg can be cloned directly from the GitHub vcpkg repository using following steps.
+
+    #### 1. Clone the repository
+    ```bash
+    git clone https://github.com/microsoft/vcpkg.git
+    ```
+
+    #### 2. Run the bootstrap script
+    ```bash
+    cd vcpkg && bootstrap-vcpkg.bat
+    ```
+
+
+
+
+
