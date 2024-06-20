@@ -25,11 +25,14 @@ Before you start, ensure you have the following installed:
     In the installation details make sure following are selected,
     - C++ CMake tools for Windows
     - vcpkg package manager (Visual Studio 2022 comes with built-in support for vcpkg, simplifying the process of installing and managing C++ libraries.)
+
+vcpkg is an open-source C++ library manager that helps you manage library dependencies across different platforms. It simplifies the process of finding, installing, and integrating libraries into your C++ projects. Developed by Microsoft, vcpkg is designed to work seamlessly with CMake.
+
 ![Visual Studio Installer](images/visual_studio_installer.jpg)
 
 **Note:** Alternatively vcpkg can be cloned directly from the GitHub vcpkg repository using following steps.
 
-1. Clone the repository to a known location (example "C:\" )
+1. Clone the repository
 
     ```bash
     git clone https://github.com/microsoft/vcpkg.git
@@ -41,6 +44,14 @@ Before you start, ensure you have the following installed:
     cd vcpkg && bootstrap-vcpkg.bat
     ```
 
+###  Download and Install CMake
+
+CMake is an open-source, cross-platform family of tools designed to build, test, and package software. It controls the software compilation process using simple platform and compiler-independent configuration files, and generates native makefiles and workspaces that can be used in the compiler environment of your choice.
+
+Download the CMake installer from the [official CMake website](https://cmake.org/download/).
+
+
+## Visual Studio IDE setup
 
 
 
