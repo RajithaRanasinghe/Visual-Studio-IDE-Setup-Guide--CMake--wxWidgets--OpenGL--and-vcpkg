@@ -20,8 +20,8 @@ CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Too
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:STRING=cl.exe
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3 /GR /EHsc
@@ -41,8 +41,8 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/MD /O2 /Ob1 /DNDEBUG
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
-//C compiler
-CMAKE_C_COMPILER:STRING=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:STRING=cl.exe
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=/DWIN32 /D_WINDOWS /W3
@@ -189,8 +189,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:STRING=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg/scripts/buildsystems/vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -257,6 +257,162 @@ VCPKG_TRACE_FIND_PACKAGE:BOOL=OFF
 //Enables messages from the VCPKG toolchain for debugging purposes.
 VCPKG_VERBOSE:BOOL=OFF
 
+//Path to a library.
+WX_adv:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_adv.lib
+
+//Path to a library.
+WX_advd:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_adv.lib
+
+//Path to a library.
+WX_aui:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_aui.lib
+
+//Path to a library.
+WX_auid:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_aui.lib
+
+//Path to a library.
+WX_base:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxbase32u.lib
+
+//Path to a library.
+WX_based:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxbase32ud.lib
+
+//Path to a library.
+WX_core:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_core.lib
+
+//Path to a library.
+WX_cored:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_core.lib
+
+//Path to a library.
+WX_dbgrid:FILEPATH=WX_dbgrid-NOTFOUND
+
+//Path to a library.
+WX_dbgridd:FILEPATH=WX_dbgridd-NOTFOUND
+
+//Path to a library.
+WX_expat:FILEPATH=WX_expat-NOTFOUND
+
+//Path to a library.
+WX_expatd:FILEPATH=WX_expatd-NOTFOUND
+
+//Path to a library.
+WX_gl:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_gl.lib
+
+//Path to a library.
+WX_gld:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_gl.lib
+
+//Path to a library.
+WX_html:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_html.lib
+
+//Path to a library.
+WX_htmld:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_html.lib
+
+//Path to a library.
+WX_jpeg:FILEPATH=WX_jpeg-NOTFOUND
+
+//Path to a library.
+WX_jpegd:FILEPATH=WX_jpegd-NOTFOUND
+
+//Path to a library.
+WX_media:FILEPATH=WX_media-NOTFOUND
+
+//Path to a library.
+WX_mediad:FILEPATH=WX_mediad-NOTFOUND
+
+//Path to a library.
+WX_mono:FILEPATH=WX_mono-NOTFOUND
+
+//Path to a library.
+WX_monod:FILEPATH=WX_monod-NOTFOUND
+
+//Path to a library.
+WX_net:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxbase32u_net.lib
+
+//Path to a library.
+WX_netd:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxbase32ud_net.lib
+
+//Path to a library.
+WX_odbc:FILEPATH=WX_odbc-NOTFOUND
+
+//Path to a library.
+WX_odbcd:FILEPATH=WX_odbcd-NOTFOUND
+
+//Path to a library.
+WX_png:FILEPATH=WX_png-NOTFOUND
+
+//Path to a library.
+WX_pngd:FILEPATH=WX_pngd-NOTFOUND
+
+//Path to a library.
+WX_propgrid:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_propgrid.lib
+
+//Path to a library.
+WX_propgridd:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_propgrid.lib
+
+//Path to a library.
+WX_qa:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_qa.lib
+
+//Path to a library.
+WX_qad:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_qa.lib
+
+//Path to a library.
+WX_regex:FILEPATH=WX_regex-NOTFOUND
+
+//Path to a library.
+WX_regexd:FILEPATH=WX_regexd-NOTFOUND
+
+//Path to a library.
+WX_ribbon:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_ribbon.lib
+
+//Path to a library.
+WX_ribbond:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_ribbon.lib
+
+//Path to a library.
+WX_richtext:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_richtext.lib
+
+//Path to a library.
+WX_richtextd:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_richtext.lib
+
+//Path to a library.
+WX_scintilla:FILEPATH=WX_scintilla-NOTFOUND
+
+//Path to a library.
+WX_scintillad:FILEPATH=WX_scintillad-NOTFOUND
+
+//Path to a library.
+WX_stc:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_stc.lib
+
+//Path to a library.
+WX_stcd:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_stc.lib
+
+//Path to a library.
+WX_tiff:FILEPATH=WX_tiff-NOTFOUND
+
+//Path to a library.
+WX_tiffd:FILEPATH=WX_tiffd-NOTFOUND
+
+//Path to a library.
+WX_webview:FILEPATH=WX_webview-NOTFOUND
+
+//Path to a library.
+WX_webviewd:FILEPATH=WX_webviewd-NOTFOUND
+
+//Path to a library.
+WX_xml:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxbase32u_xml.lib
+
+//Path to a library.
+WX_xmld:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxbase32ud_xml.lib
+
+//Path to a library.
+WX_xrc:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_xrc.lib
+
+//Path to a library.
+WX_xrcd:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_xrc.lib
+
+//Path to a library.
+WX_zlib:FILEPATH=WX_zlib-NOTFOUND
+
+//Path to a library.
+WX_zlibd:FILEPATH=WX_zlibd-NOTFOUND
+
 //(experimental) Automatically copy dependencies into the install
 // target directory for executables. Requires CMake 3.14.
 X_VCPKG_APPLOCAL_DEPS_INSTALL:BOOL=OFF
@@ -274,6 +430,15 @@ Z_VCPKG_PWSH_PATH:FILEPATH=C:/Program Files/PowerShell/7/pwsh.exe
 //The directory which contains the installed libraries for each
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed
+
+//Set wxWidgets configuration (mswud;mswu)
+wxWidgets_CONFIGURATION:STRING=mswu
+
+//Use release and debug configurations?
+wxWidgets_USE_REL_AND_DBG:BOOL=ON
+
+//Location of wxWidgets resource file compiler binary (wxrc)
+wxWidgets_wxrc_EXECUTABLE:FILEPATH=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/tools/wxwidgets/wxrc.exe
 
 
 ########################
@@ -414,12 +579,122 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_TOOLCHAIN_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding wxWidgets
+FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[debug;D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_core.lib;optimized;D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_core.lib;debug;D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxbase32ud.lib;optimized;D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxbase32u.lib;debug;D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/debug/lib/wxmsw32ud_gl.lib;optimized;D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/wxmsw32u_gl.lib;opengl32;glu32;winmm;comctl32;uuid;oleacc;uxtheme;rpcrt4;shlwapi;version;wsock32][D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib/mswu;D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/include][cfound components: core base gl missing components: png tiff jpeg zlib regex expat][v3.2.4()]
 //ADVANCED property for variable: VCPKG_VERBOSE
 VCPKG_VERBOSE-ADVANCED:INTERNAL=1
+WX_LIB_DIR:INTERNAL=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib
+WX_ROOT_DIR:INTERNAL=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows
+//ADVANCED property for variable: WX_adv
+WX_adv-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_advd
+WX_advd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_aui
+WX_aui-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_auid
+WX_auid-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_base
+WX_base-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_based
+WX_based-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_core
+WX_core-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_cored
+WX_cored-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_dbgrid
+WX_dbgrid-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_dbgridd
+WX_dbgridd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_expat
+WX_expat-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_expatd
+WX_expatd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_gl
+WX_gl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_gld
+WX_gld-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_html
+WX_html-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_htmld
+WX_htmld-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_jpeg
+WX_jpeg-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_jpegd
+WX_jpegd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_media
+WX_media-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_mediad
+WX_mediad-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_mono
+WX_mono-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_monod
+WX_monod-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_net
+WX_net-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_netd
+WX_netd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_odbc
+WX_odbc-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_odbcd
+WX_odbcd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_png
+WX_png-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_pngd
+WX_pngd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_propgrid
+WX_propgrid-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_propgridd
+WX_propgridd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_qa
+WX_qa-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_qad
+WX_qad-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_regex
+WX_regex-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_regexd
+WX_regexd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_ribbon
+WX_ribbon-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_ribbond
+WX_ribbond-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_richtext
+WX_richtext-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_richtextd
+WX_richtextd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_scintilla
+WX_scintilla-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_scintillad
+WX_scintillad-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_stc
+WX_stc-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_stcd
+WX_stcd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_tiff
+WX_tiff-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_tiffd
+WX_tiffd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_webview
+WX_webview-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_webviewd
+WX_webviewd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_xml
+WX_xml-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_xmld
+WX_xmld-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_xrc
+WX_xrc-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_xrcd
+WX_xrcd-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_zlib
+WX_zlib-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: WX_zlibd
+WX_zlibd-ADVANCED:INTERNAL=1
 //Making sure VCPKG_MANIFEST_MODE doesn't change
 Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=ON
 //The path to the PowerShell implementation to use.
 Z_VCPKG_POWERSHELL_PATH:INTERNAL=C:/Program Files/PowerShell/7/pwsh.exe
 //Vcpkg root directory
 Z_VCPKG_ROOT_DIR:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg
+wxWidgets_LIB_DIR:INTERNAL=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows/lib
+wxWidgets_ROOT_DIR:INTERNAL=D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/vcpkg_installed/x64-windows
 

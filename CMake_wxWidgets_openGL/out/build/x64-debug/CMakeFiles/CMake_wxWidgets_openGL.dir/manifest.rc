@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/GitHub/Visual-Studio-IDE-Setup-Guide--CMake--wxWidgets--OpenGL--and-vcpkg/CMake_wxWidgets_openGL/out/build/x64-debug/CMakeFiles/CMake_wxWidgets_openGL.dir/embed.manifest"
