@@ -1,0 +1,30 @@
+Package: tiff
+Version: 4.6.0
+Port-Version: 4
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: aa7a1627acd0fa63df6e0853cacacbad400b73c8c9f507c4138f1b04b4fca116
+Description: A library that supports the manipulation of TIFF image files
+Default-Features: jpeg, lzma, zip
+
+Package: tiff
+Feature: jpeg
+Depends: libjpeg-turbo
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support JPEG compression in TIFF image files
+
+Package: tiff
+Feature: lzma
+Depends: liblzma
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support LZMA compression in TIFF image files
+
+Package: tiff
+Feature: zip
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support ZIP/deflate compression in TIFF image files
