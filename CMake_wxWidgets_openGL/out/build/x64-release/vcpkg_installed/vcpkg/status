@@ -1,0 +1,194 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 766db06c109882dada90b19ceb0068959340704cc626e7d14d950f137082e9ce
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2023-05-04
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d7f26679ea6b1a48df1fde968651988504c1c8e2a2f9e5d900a8893e8620a750
+Status: install ok installed
+
+Package: fmt
+Version: 10.2.1
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4f5b017596aa8470da30980323f91f771f74a2109688810ec6c4d891c1e523c3
+Description: Formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.
+Status: install ok installed
+
+Package: egl-registry
+Version: 2024-01-25
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5b8a0fefc3c912d9ea62b086cfbe4193954e5f4aa6520160f2f3a7d6f600584b
+Description: EGL API and Extension Registry
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2024-02-10
+Port-Version: 1
+Depends: egl-registry
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f4641773326349a72e94193df3f82f89423674e1fc78f45071e1fc5fe3daa924
+Description: OpenGL, OpenGL ES, and OpenGL ES-SC API and Extension Registry
+Status: install ok installed
+
+Package: opengl
+Version: 2022-12-04
+Port-Version: 3
+Depends: opengl-registry
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6e664968feb97775feea52c5ce419c7fc4f2ca6019704fcb4a7c0f518f2147dd
+Description: Open Graphics Library (OpenGL)[3][4][5] is a cross-language, cross-platform application programming interface (API) for rendering 2D and 3D vector graphics.
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 48ef7c14fc2360a980b0c339d85868cf2a222e5e6a6ab40c615c915ad5827236
+Description: A compression library
+Status: install ok installed
+
+Package: liblzma
+Version: 5.6.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 705522aa8c7fadfdfb1752fffcc9f7dec1fb9dd97e667441848410badfe82b51
+Description: Compression library with an API similar to that of zlib.
+Status: install ok installed
+
+Package: libjpeg-turbo
+Version: 3.0.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 9fe496006ddbc12668bac8479084509492e613be25e2c309900d9229fe04ed6b
+Description: libjpeg-turbo is a JPEG image codec that uses SIMD instructions (MMX, SSE2, NEON, AltiVec) to accelerate baseline JPEG compression and decompression on x86, x86-64, ARM, and PowerPC systems.
+Status: install ok installed
+
+Package: tiff
+Version: 4.6.0
+Port-Version: 4
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: aa7a1627acd0fa63df6e0853cacacbad400b73c8c9f507c4138f1b04b4fca116
+Description: A library that supports the manipulation of TIFF image files
+Default-Features: jpeg, lzma, zip
+Status: install ok installed
+
+Package: tiff
+Feature: jpeg
+Depends: libjpeg-turbo
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support JPEG compression in TIFF image files
+Status: install ok installed
+
+Package: tiff
+Feature: lzma
+Depends: liblzma
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support LZMA compression in TIFF image files
+Status: install ok installed
+
+Package: tiff
+Feature: zip
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support ZIP/deflate compression in TIFF image files
+Status: install ok installed
+
+Package: pcre2
+Version: 10.42
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d07c9fbfff5de64c8e0c76ab8f923aa667cffa4fd13f40515a5cedd972f21bc8
+Description: Regular Expression pattern matching using the same syntax and semantics as Perl 5.
+Default-Features: platform-default-features
+Status: install ok installed
+
+Package: pcre2
+Feature: jit
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable support for Just-In-Time compiling regex matchers
+Status: install ok installed
+
+Package: pcre2
+Feature: platform-default-features
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable default features
+Status: install ok installed
+
+Package: nanosvg
+Version: 2023-12-29
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d106c0dbc667c0261c1a09f270582f0eea67299f985028bffc6db2dec0b2a372
+Description: NanoSVG is a simple stupid single-header-file SVG parser. It is accompanied by a simple SVG rasterizer.
+Status: install ok installed
+
+Package: libpng
+Version: 1.6.43
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0d606c2b25a31e204eeaf1305c0927f8af9aaa0b26bb0fedb6d63b830678e624
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Status: install ok installed
+
+Package: expat
+Version: 2.6.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: bdc394a5527d61e46ae3ce8cc4adc586037eca772a3fc4d298563f8ece5fc966
+Description: XML parser library written in C
+Status: install ok installed
+
+Package: wxwidgets
+Version: 3.2.4
+Port-Version: 1
+Depends: expat, libjpeg-turbo, libpng, nanosvg, opengl, pcre2, tiff, vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 7c98e471b6b6ef08587c248bfd45f1f875f5bbbd0ae8fa17f097370e9083e0d3
+Description: Widget toolkit and tools library for creating graphical user interfaces (GUIs) for cross-platform applications.
+    Set WXWIDGETS_USE_STL in a custom triplet to build with the wxUSE_STL build option.
+    Set WXWIDGETS_USE_STD_CONTAINERS in a custom triplet to build with the wxUSE_STD_CONTAINERS build option.
+Default-Features: debug-support, sound
+Status: install ok installed
+
+Package: wxwidgets
+Feature: debug-support
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable wxWidgets debugging support hooks even for release builds (wxDEBUG_LEVEL 1)
+Status: install ok installed
+
+Package: wxwidgets
+Feature: sound
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build wxSound support
+Status: install ok installed
+

@@ -1,7 +1,4 @@
 # ninja log v5
-1	9	0	clean	8c45b54705a541e8
-7	2731	7405549925153917	CMakeFiles/CMake_wxWidgets_openGL.dir/CMake_wxWidgets_openGL.cpp.obj	dfb54ff8e45ad05d
-2745	4570	7405549928959870	CMake_wxWidgets_openGL.exe	d3b08efd80301a16
 3	10	0	clean	8c45b54705a541e8
 8	2291	7405552888182100	CMakeFiles/CMake_wxWidgets_openGL.dir/CMake_wxWidgets_openGL.cpp.obj	dfb54ff8e45ad05d
 2291	3146	7405552889625863	CMake_wxWidgets_openGL.exe	d3b08efd80301a16
