@@ -29,15 +29,17 @@ Before you start, ensure you have the following installed:
 
 **Note:** Alternatively vcpkg can be cloned directly from the GitHub vcpkg repository using following steps.
 
-#### 1. Clone the repository
-```bash
-git clone https://github.com/microsoft/vcpkg.git
-```
+1. Clone the repository to a known location (example "C:\" )
 
-#### 2. Run the bootstrap script
-```bash
-cd vcpkg && bootstrap-vcpkg.bat
-```
+    ```bash
+    git clone https://github.com/microsoft/vcpkg.git
+    ```
+
+2. Run the bootstrap script
+
+    ```bash
+    cd vcpkg && bootstrap-vcpkg.bat
+    ```
 
 
 
