@@ -283,7 +283,7 @@ This will create a project with following project files.
 
 ## Run the example C++ code.
 
-Replace the contents of the `CMake_wxWidgets_openGL.cpp` file with the following code:
+    - Replace the contents of the `CMake_wxWidgets_openGL.cpp` file with the following code:
     ```bash
 
     #include <wx/wx.h>
